@@ -1,0 +1,8 @@
+#container {
+  height: 40%;
+  width: 40%;
+  margin: 60px auto;
+  display: grid;
+  grid-template-rows: repeat(4, auto);
+  grid-template-columns: repeat(4, auto);
+}
