@@ -1,8 +1,32 @@
+body {
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
+
+span {
+  margin: 10px 0;
+}
+
+input {
+  grid-column: 1 / end;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
 #container {
   height: 40%;
   width: 40%;
-  margin: 60px auto;
+  margin: 10% auto;
   display: grid;
   grid-template-rows: repeat(4, auto);
-  grid-template-columns: repeat(4, auto);
+  grid-template-columns: repeat(3, auto);
+}
+
+#zero {
+  grid-column: 2 / 3;
+}
+
+#divide {
+  grid-column: 4 / end;
 }
