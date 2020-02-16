@@ -4,14 +4,38 @@ body {
 }
 
 span {
-  margin: 10px 0;
+  padding: 28px 0;
+  border: 1px #e0e0e0 solid;
+  font-size: 20px;
+}
+
+span:hover {
+  background: #f0f0f0;
+}
+
+span:active {
+  background: #d0d0d0;
+}
+
+h1 {
+  grid-column: 1 / end;
+  font-size: 48px;
+  color: #3c3c3c;
 }
 
 input {
   grid-column: 1 / end;
-  width: 80%;
+  width: 385px;
+  height: 2.5em;
   margin: 0 auto;
   margin-bottom: 10px;
+  padding: 0 15px;
+  border: 2px #e0e0e0 solid;
+  font-size: 2em;
+}
+
+input:focus {
+  border-color: #c0c0c0;
 }
 
 #container {
@@ -21,12 +45,4 @@ input {
   display: grid;
   grid-template-rows: repeat(4, auto);
   grid-template-columns: repeat(3, auto);
-}
-
-#zero {
-  grid-column: 2 / 3;
-}
-
-#divide {
-  grid-column: 4 / end;
 }
