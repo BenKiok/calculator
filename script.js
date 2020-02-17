@@ -7,7 +7,7 @@ let operation;
 input.value = ''; // saves input value after refreshing browser
 
 keyPad.forEach(function(key) {
-  if (key.textContent == '+' || key.textContent == '-' || key.textContent == '/' || key.textContent == '*') {
+  if (key.textContent == '+' || key.textContent == '-' || key.textContent == '/' || key.textContent == 'x') {
     key.addEventListener('click', () => { pressOperatorKey(key) }, false);
   } else if (key.textContent == '=') {
     key.addEventListener('click', pressEqualKey, false);
